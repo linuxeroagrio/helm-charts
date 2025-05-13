@@ -1,27 +1,38 @@
 apiVersion: v1
 entries:
-  openshift-gitops:
-  - apiVersion: v2
-    appVersion: v2.1.5
-    created: "2021-11-07T02:35:26.717046739-06:00"
-    description: A Helm chart for customising the deployment of the OpenShift GitOps
-      Operator
-    digest: e0e5044a8dbf1a643ffe5614d8dc9af2c9ea783597dff04b3b46c3c099821f3f
-    maintainers:
-    - name: jvarela
-    name: openshift-gitops
-    urls:
-    - https://linuxeroagrio.github.io/helm-charts/openshift-gitops-0.0.1.tgz
-    version: 0.0.1
   demo-servicemesh-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-26T01:32:42.644232336-06:00"
+    created: "2025-05-13T17:03:34.023954911-06:00"
     description: A simple demo service mesh app for OpenShift
     digest: cb72a2c2b90599d486021d61d6fcd19363179e63bd776daa08a93b3b251cab9b
     name: demo-servicemesh-app
     type: application
     urls:
-    - https://linuxeroagrio.github.io/helm-charts/demo-servicemesh-app-0.1.0.tgz
+    - demo-servicemesh-app-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-26T01:32:42.643934918-06:00"
+  hello-chart:
+  - apiVersion: v2
+    appVersion: v1
+    created: "2025-05-13T17:03:34.024053521-06:00"
+    description: An example Helm chart for Linuxero Agrio's hello app
+    digest: 41aea1e74e9a3bb636d4d0b0c77becf12533cb7987a240bc36abf6d293f32458
+    name: hello-chart
+    type: application
+    urls:
+    - hello-chart-0.1.0.tgz
+    version: 0.1.0
+  openshift-gitops:
+  - apiVersion: v2
+    appVersion: v2.1.5
+    created: "2025-05-13T17:03:34.024317955-06:00"
+    description: A Helm chart for customising the deployment of the OpenShift GitOps
+      Operator
+    digest: fa33d040b5e9e54e76f1cbb99a38efb3e002d0ff5e9654373831e748b1d445e1
+    maintainers:
+    - name: jvarela
+    name: openshift-gitops
+    urls:
+    - openshift-gitops-0.0.1.tgz
+    version: 0.0.1
+generated: "2025-05-13T17:03:34.02375142-06:00"
