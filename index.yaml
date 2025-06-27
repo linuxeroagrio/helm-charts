@@ -3,29 +3,29 @@ entries:
   demo-servicemesh-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T17:03:34.023954911-06:00"
+    created: "2025-06-26T18:22:16.94650642-06:00"
     description: A simple demo service mesh app for OpenShift
     digest: cb72a2c2b90599d486021d61d6fcd19363179e63bd776daa08a93b3b251cab9b
     name: demo-servicemesh-app
     type: application
     urls:
-    - demo-servicemesh-app-0.1.0.tgz
+    - https://linuxeroagrio.github.io/helm-charts/demo-servicemesh-app-0.1.0.tgz
     version: 0.1.0
   hello-chart:
   - apiVersion: v2
     appVersion: v1
-    created: "2025-05-13T17:03:34.024053521-06:00"
+    created: "2025-06-26T18:22:16.946627728-06:00"
     description: An example Helm chart for Linuxero Agrio's hello app
-    digest: 41aea1e74e9a3bb636d4d0b0c77becf12533cb7987a240bc36abf6d293f32458
+    digest: 403f9fd58dc81911333bdf701a88002731cb3a0096f84d916698f74e8709c280
     name: hello-chart
     type: application
     urls:
-    - hello-chart-0.1.0.tgz
+    - https://linuxeroagrio.github.io/helm-charts/hello-chart-0.1.0.tgz
     version: 0.1.0
   openshift-gitops:
   - apiVersion: v2
     appVersion: v2.1.5
-    created: "2025-05-13T17:03:34.024317955-06:00"
+    created: "2025-06-26T18:22:16.947043129-06:00"
     description: A Helm chart for customising the deployment of the OpenShift GitOps
       Operator
     digest: fa33d040b5e9e54e76f1cbb99a38efb3e002d0ff5e9654373831e748b1d445e1
@@ -33,6 +33,33 @@ entries:
     - name: jvarela
     name: openshift-gitops
     urls:
-    - openshift-gitops-0.0.1.tgz
+    - https://linuxeroagrio.github.io/helm-charts/openshift-gitops-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-13T17:03:34.02375142-06:00"
+  virtual-desktop:
+  - apiVersion: v2
+    appVersion: bootc-fedora-mate-42-1.0
+    created: "2025-06-26T18:22:16.947207403-06:00"
+    description: Creates a virtual desktop Kubevirt virtual machine wich open a vnc
+      port
+    digest: 8014da00fe535aa514efd0a6cc7e6e5935e225cd5f22b03058c5c7752026449c
+    home: youtube.com/@linuxeroagrio
+    keywords:
+    - kasmvnc
+    - vnc
+    - Virtual Machine
+    - vm
+    - Kubevirt
+    - OpenShift Virtualization
+    - Virtual Desktop
+    maintainers:
+    - email: jvarela@redhat.com
+      name: Jorge Varela
+      url: https://github.com/linuxeroagrio
+    name: virtual-desktop
+    sources:
+    - https://github.com/linuxeroagrio/vm-pipeline
+    type: application
+    urls:
+    - https://linuxeroagrio.github.io/helm-charts/virtual-desktop-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-06-26T18:22:16.946261875-06:00"
